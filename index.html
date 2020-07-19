@@ -1,0 +1,1710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mehndi by Ushna</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/*Slideshow*/
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #092c4a;
+ padding: 10px 0px;
+}
+
+.header a {
+  float: left;
+  color: #c88b00;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+    
+
+/* Style the top navigation bar */
+/* Style the tab */
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  background-color: #092c4a;
+    text-align: center;
+    width: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  transition: 0.3s;
+  font-size: 17px;
+  color:#e8debf;
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #c88b00;
+  color:#092c4a;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #e8debf;
+  color:#092c4a
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  float: none;
+  background: #e8debf; 
+/*Need to edit this colour for tab background*/
+}
+
+/* End of tabs   */
+/* Beginning of Products   */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.product {
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+.price {
+  color: grey;
+  font-size: 19px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+    /* End of Products */
+
+/*Shipping   */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+/*End of shipping */
+    
+/*Services*/
+.accordion1 {
+  background-color: #c9b579;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-weight: bold;
+}
+
+.active, .accordion:hover {
+  background-color: #c88b00; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #e8e2cf;
+  overflow: hidden;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #e8debf;
+}  
+
+/*Parties Flipcards*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card1 {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card1-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card1:hover .flip-card1-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card1-front, .flip-card1-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card1-front {
+  background-color: #e8e2cf;
+  color: black;
+}
+
+.flip-card1-back {
+  background-color: #092c4a;
+  color: white;
+  transform: rotateY(180deg);
+}
+/*Bridal Flipcards*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #e8e2cf;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #092c4a;
+  color: white;
+  transform: rotateY(180deg);
+}
+    
+.rowcard {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.rowcard,
+.rowcard > .columncard {
+  padding: 19px;
+}
+
+/* Create four equal columns that floats next to each other */
+.columncard {
+  float: left;
+  
+}
+
+/* Clear floats after rows */ 
+.rowcard:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.contentcard {
+  background-color: white;
+  padding: 10px;
+}
+
+/*Gallery*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+  text-align: center;
+  padding: 32px;
+}
+
+.row2 {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column2 {
+  -ms-flex: 20%; /* IE 10 */
+  flex: 20%;
+  padding: 0 4px;
+}
+
+.column2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}   
+    
+
+#myImg:hover {opacity: 0.7;}
+#myImg2:hover {opacity: 0.7;}
+#myImg3:hover {opacity: 0.7;}
+#myImg4:hover {opacity: 0.7;}
+#myImg5:hover {opacity: 0.7;}
+#myImg6:hover {opacity: 0.7;}
+#myImg7:hover {opacity: 0.7;}
+#myImg8:hover {opacity: 0.7;}
+#myImg9:hover {opacity: 0.7;}
+#myImg10:hover {opacity: 0.7;}
+#myImg11:hover {opacity: 0.7;}
+#myImg12:hover {opacity: 0.7;}
+#myImg13:hover {opacity: 0.7;}
+#myImg14:hover {opacity: 0.7;}
+#myImg15:hover {opacity: 0.7;}
+#myImg16:hover {opacity: 0.7;}
+#myImg17:hover {opacity: 0.7;}
+#myImg18:hover {opacity: 0.7;}
+#myImg19:hover {opacity: 0.7;}
+#myImg20:hover {opacity: 0.7;}
+#myImg21:hover {opacity: 0.7;}
+#myImg22:hover {opacity: 0.7;}
+#myImg23:hover {opacity: 0.7;}
+#myImg24:hover {opacity: 0.7;}
+#myImg25:hover {opacity: 0.7;}
+#myImg26:hover {opacity: 0.7;}
+#myImg27:hover {opacity: 0.7;}
+#myImg28:hover {opacity: 0.7;}
+#myImg29:hover {opacity: 0.7;}
+#myImg30:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+    
+/*FAQ*/
+.accordion {
+  background-color: #c9b579;
+  color: Black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #c88b00; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #e8e2cf;
+  overflow: hidden;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+    
+<body>
+
+<body>
+
+<div class="header">
+  <a href="#default" class="logo"><img src="images/Logo.jpg" style="width:250px"></a>
+  <div class="header-right">
+    <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+  <button class="tablinks" onclick="openCity(event, 'FAQ')">FAQ</button>
+  <button class="tablinks" onclick="openCity(event, 'Gallery')">Gallery</button>
+  <button class="tablinks" onclick="openCity(event, 'Services')">Services</button>
+  <button class="tablinks" onclick="openCity(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openCity(event, 'About')">About</button>
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+</div>
+</div>
+</div>
+
+</body>
+    
+<!--Tabs-->
+
+    
+<!--Part of the Tabs-->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<div id="Home" class="tabcontent">
+  <body>
+<!--Slideshow-->
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/Website%20Title1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/Website%20Title1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/Website%20Title1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</div>
+
+<!--About-->
+<div id="About" class="tabcontent">
+  <h3>Meet the Artist</h3>
+  <p>Ushna is a 20 year old henna artist located in Markham ON. She is currently working towards her degree in Mechanical Engineering and enjoys doing henna on the side. </p>
+</div>
+<!--Products-->
+<div id="Products" class="tabcontent">
+<body>
+<!--Row 1-->
+<div class="row">
+<div class="column">
+<div class="card">
+  <img src="images/cones.jpg" alt="Cones" style="width:100%">
+ <p class="product">Eucalyptus Henna Cones (0.5mm)</p>
+  <p class="price">$4.00 each</p>
+  <p>For orders of 8+ cones, $3.50 each</p>
+  <p>Made with henna powder, eucalyptus oil, sugar, and water. 17-20g each</p>
+  
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/conewithlines.jpg" alt="Cones" style="width:100%">
+  <p class="product">Eucalyptus Henna Cones (0.4mm)</p>
+  <p class="price">$4.50 each</p>
+  <p>For orders of 8+ cones, $4.00 each</p>
+  <p>Made with henna powder, eucalyptus oil, sugar, and water. 17-20g each</p>
+  
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/conewithstain.jpg" alt="Cones" style="width:100%">
+  <p class="product">Lavender Henna Cones</p>
+  <p class="price">0.5mm - $5.00 each</p>
+    <p class="price">0.4mm - $5.50 each</p>
+  <p>Recommended for children, people with sensitive skin, and pregnant women.</p>
+  <p>Made with henna powder, lavender oil, sugar, and water. </p>
+  
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/aftercarebalm.jpg" alt="Aftercare Balm" style="width:100%">
+  <p class="product">Henna Aftercare Balm</p>
+  <p class="price">$5.00 each</p>
+  <p>Handmade with natural butters and oils. Has a light soothing scent</p>
+  <p>Can be used to remove the henna paste and protect the stain from water in order to ensure it darkens.</p>
+  
+</div>
+</div>
+</div>
+<!--Row 2-->
+<div class="row">
+<div class="column">
+<div class="card">
+  <img src="images/cones.jpg" alt="Henna Sealant" style="width:100%">
+  <p class="product"> Henna Sealant</p>
+  <p class="price">$2.00 each</p>
+  <p>Spray onto henna paste when it is 100% dry in order to reduce cracking and flaking off. This will ensure that the stain darkens evenly.</p>
+  <p>Made with lemon juice, sugar, and essential oils. </p>
+  
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/conewithlines.jpg" alt="Beginner Kit" style="width:100%">
+  <p class="product"> Henna Beginner Kit</p>
+  <p class="price">$20</p>
+  <p>Perfect for beginners who are just starting to learn how to use henna, as a gift for a henna enthusiast, or for those who would like to try all the products Mehndi by Ushna has to offer! </p>
+  <p>Includes: 1x0.5mm Eucalyptus Cones, 1x0.4mm eucalytpus cones, 2x 0.5mm practice cones, reusable practice sheet, henna sealant, henna aftercare balm, aftercare instructions. </p>
+  
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/conewithstain.jpg" alt="Practice Sheet" style="width:100%">
+ <p class="product">Practice Sheet</p>
+  <p class="price">$4.00</p>
+    <p class="price">0.4mm - $5.50 each</p>
+  <p>Reusable double sided practice sheet. On the front, there are henna drills, on the back there is a blank hand to create your own designs.</p>
+  
+</div>
+</div>
+<div class="column">
+<div class="card">
+  <img src="images/aftercarebalm.jpg" alt="Aftercare Balm" style="width:100%">
+  <p class="product">Mandala Candles</p>
+  <p class="price">$2.50 each</p>
+  <p>Discounts on orders of 10+. Can include glitter or jewles for an extra cost.  </p> 
+  <p>Perfect as gifts, for weddings, or for parties. I can customize your choice of candles or vases, costs may vary.</p> 
+
+
+  
+</div>
+</div>
+</div>
+</body>
+<!--Shipping-->
+<body>
+
+<!--Shipping-->
+<button type="button" class="collapsible">Shipping</button>
+<div class="content">
+  <h3>Ontario:</h3>
+    <p>$12 for orders within Ontario. Cones are express shipped with a cold pack to ensure they remain fresh.</p>
+    <h3>Rest of Canada:</h3>
+    <p>$17 for orders outside of Ontario. Cones are express shipped with a cold pack to ensure they remain fresh.</p>
+    <h3>USA:</h3>
+    <p>I currently do not offer shipping to the USA. Please check back soon!</p>
+    <h3>International:</h3>
+    <p>I do not offer shipping internationally. Henna cones are perishable and will go bad if they are in transit for too long. </p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</div>
+<div id="Services" class="tabcontent">
+<body>
+<h2>Services</h2>
+<p>To confirm a booking and date, a deposit is required.</p>
+    
+<button class="accordion1">Parties</button>
+<div class="panel">
+  <p>$70/hour, minimum 2 hours. </p>
+  <p> The artist can do 8-12 simple designs in an hour.</p>
+    <p>There may be an additional travel fees depening on your location. Please contact for more information.  </p>
+   
+
+<div class="rowcard">
+<div class="columncard">
+<div class="flip-card1">
+  <div class="flip-card1-inner">
+    <div class="flip-card1-front">
+      <img src="images/party10.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+    </div>
+    <div class="flip-card1-back">
+      <p>Simple party henna</p>
+    </div>
+  </div>
+</div>
+</div>
+    
+<div class="columncard">
+<div class="flip-card1">
+  <div class="flip-card1-inner">
+    <div class="flip-card1-front">
+      <img src="images/party15.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+    </div>
+    <div class="flip-card1-back">
+      <p>Simple party henna</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="columncard">
+<div class="flip-card1">
+  <div class="flip-card1-inner">
+    <div class="flip-card1-front">
+      <img src="images/party12.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+    </div>
+    <div class="flip-card1-back"> 
+      <p>Simple party henna</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="columncard">
+<div class="flip-card1">
+  <div class="flip-card1-inner">
+    <div class="flip-card1-front">
+      <img src="images/party1.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+    </div>
+    <div class="flip-card1-back"> 
+      <p>Medium party henna</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="columncard">
+<div class="flip-card1">
+  <div class="flip-card1-inner">
+    <div class="flip-card1-front">
+      <img src="images/party11.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+    </div>
+    <div class="flip-card1-back"> 
+      <p>Medium party henna</p>
+    </div>
+  </div>
+</div>
+</div>
+</div>    
+</div>
+
+<button class="accordion1">Bridal</button>
+<div class="panel"> 
+<body>
+<p>Bridal consultations are $15 each. If you book with me, this cost will be deducted from your total.</p>
+<p>Bridal consultations include a design on one side of the hand, design plans, and discussion of costs. Bridal trials are optional. </p>
+
+<table>
+  <tr>
+    <th>Plan</th>
+    <th>Heaviness and Legnth</th>
+    <th>Price</th>
+    <th>Time</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>Heavy to 1 inch above wrist</td>
+    <td>$40/side</td>
+    <td>2-3 hours</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Heavy to mid arm</td>
+    <td>$70/side</td>
+    <td>3-5 hours</td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>Heavy to elbow</td>
+    <td>$100/side</td>
+    <td>4-6 hours</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Medium to ankle</td>
+    <td>$30/foot</td>
+    <td>1-1.5 hours</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Heavy to ankle</td>
+    <td>$50/foot</td>
+    <td>1-2 hours</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Heavy to mid leg</td>
+    <td>$80/foot</td>
+    <td>2-3 hours</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Heavy to knees</td>
+    <td>$120/foot</td>
+    <td>3-4 hours</td>
+  </tr>
+</table>
+<p>Don't see a plan that fits what you're looking for? Contact Ushna for more options!</p>
+<p>All prices are approximate and can be adjusted based on heaviness. Motifs such as bride/grooms, animals, cities etc. cost extra. Please message for more details. </p>
+
+<p>Please specify which plan(s) you are interested in, the date you would like to have your bridal done, and your location when inquiring.</p>
+<body>
+
+
+
+<div class="rowcard">
+<div class="columncard">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/heavytowrist.jpg" alt="Bridal Package C" style="width:250px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Package A</h1> 
+      <p>Heavy to wrist</p>
+    </div>
+  </div>
+</div>
+</div>
+    
+<div class="columncard">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/bridal1.jpg" alt="Bridal Package C" style="width:auto;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Package B</h1> 
+      <p>Heavy to Midarm</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="columncard">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/bridal5.jpg" alt="Bridal Package C" style="width:auto;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Package C</h1> 
+      <p>Heavy to elbow with dog motif</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="columncard">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/bridaltoelbow.jpg" alt="Bridal Package C" style="width:auto;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Package C</h1> 
+      <p>Heavy to elbow</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="columncard">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/backbridal2.jpg" alt="Bridal Package C" style="width:auto;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Package B</h1> 
+      <p>Heavy to midarm</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="columncard">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/backbridal3.jpg" alt="Bridal Package C" style="width:250px;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Package B1 </h1> 
+      <p>Heavy to midarm with medium hands and medium feet to ankles</p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="columncard">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/heavylegtomidcalf.jpg" alt="Bridal Package C" style="width:auto;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Package 1/2</h1> 
+      <p>Medium to ankles and heavy to midleg</p>
+    </div>
+  </div>
+</div>
+</div>
+    
+<div class="columncard">
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="images/mediumfeet.jpg" alt="Bridal Package C" style="width:auto;height:250px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Package 1</h1> 
+      <p>Medium to ankles </p>
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+    
+<!--Bridal Picture card flip-->
+</body>
+</body>
+  
+</div>    
+
+
+
+<button class="accordion1">Individual Appointments</button>
+<div class="panel">
+  <p>Prices start at $5/side and increase based on length, heaviness, and design. </p>
+    
+<div class="rowcard">
+<div class="columncard">
+      <img src="images/party10.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+</div>
+    
+<div class="columncard">
+      <img src="images/palmstain.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+</div>
+    
+<div class="columncard">
+      <img src="images/party15.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+</div>
+    
+<div class="columncard">
+      <img src="images/party3.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+</div>
+    
+<div class="columncard">
+      <img src="images/heavy9.jpg" alt="Bridal Package C" style="width:auto;height:200px;">
+</div>
+    
+</div>   
+    
+</div>
+
+<button class="accordion1">Body Art </button>
+<div class="panel">
+  <p>Prices are dependant on size, location, and intricacy of the design. Please contact for more details and pricing quotes.</p>
+    
+<div class="columncard">
+      <img src="images/back.jpg" alt="Bridal Package C" style="width:auto;height:250px;">
+</div>
+
+</div>
+    
+<button class="accordion1">White Henna </button>
+<div class="panel">
+  <p>White henna designs start at $15/side and increase based on length, heaviness, and design. <p/><p>White henna does not stain your hands and is more of a temporary tattoo which will rub off with washing. You cannot preform whudu with white henna. </p>
+    
+<div class="columncard">
+      <img src="images/whitehenna.jpg" alt="Bridal Package C" style="width:auto;height:250px;">
+</div>
+    
+</div>
+    
+<p>All prices are approximate and can be adjusted based on heaviness. Motifs such as bride/grooms, animals, cities etc. cost extra. Please message for more details. </p>    
+
+<script>
+    
+var acc = document.getElementsByClassName("accordion1");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+    <h4>Contact me for inquiries or more information.</h4>
+
+</div>
+<div id="Gallery" class="tabcontent">
+
+<body>
+
+<!-- Header -->
+<div class="body" id="myHeader">
+  <h1>Pictures of Ushna's Work</h1>
+  <p>Click on the image to zoom in</p>
+  <p>Check out her instagram @ushnamehndi for her latest photos!</p>
+
+</div>
+
+<!-- Photo Grid -->
+<div class="row2"> 
+  <div class="column2">
+    <img id="myImg" src="images/bridal1.jpg" style="width:100%">
+    <img id="myImg2" src="images/heavytowrist.jpg" style="width:100%">
+    <img id="myImg3" src="images/back.jpg" style="width:100%">
+    <img id="myImg4" src="images/party2.jpg" style="width:100%">
+    <img id="myImg5" src="images/party6.jpg" style="width:100%">
+    <img id="myImg6" src="images/party8.jpg" style="width:100%">
+  </div>
+  <div class="column2">
+    <img id="myImg7" src="images/backbridal2.jpg" style="width:100%">
+    <img id="myImg8" src="images/palmstain.jpg" style="width:100%">
+    <img id="myImg9" src="images/heavylegtomidcalf.jpg" style="width:100%">
+    <img id="myImg10" src="images/party4.jpg" style="width:100%">
+    <img id="myImg11" src="images/bridal9.jpg" style="width:100%">
+    <img id="myImg12" src="images/party10.jpg" style="width:100%">
+  </div>  
+  <div class="column2">
+    <img id="myImg13" src="images/bridal3.PNG" style="width:100%">
+    <img id="myImg14" src="images/back.jpg" style="width:100%">
+    <img id="myImg15" src="images/bridal8.jpg" style="width:100%">
+    <img id="myImg16" src="images/party11.jpg" style="width:100%">
+    <img id="myImg17" src="images/heavy2.jpg" style="width:100%">
+    <img id="myImg18" src="images/engagement4.jpg" style="width:100%">
+  </div>
+  <div class="column2">
+    <img id="myImg19" src="images/bridal2.jpg" style="width:100%">
+    <img id="myImg20" src="images/stainpic.jpg" style="width:100%">
+    <img id="myImg21" src="images/party3.jpg" style="width:100%">
+    <img id="myImg22" src="images/bridal4.jpg" style="width:100%">
+    <img id="myImg23" src="images/whitehenna.jpg" style="width:100%">
+    <img id="myImg24" src="images/heavy4.jpg" style="width:100%">
+    <img id="myImg24" src="images/engagement2.jpg" style="width:100%">
+  </div>
+  <div class="column2">
+    <img id="myImg25" src="images/heavy10.jpg" style="width:100%">
+    <img id="myImg26" src="images/party1.jpg" style="width:100%">
+    <img id="myImg27" src="images/heavytowriststain.jpg" style="width:100%">
+    <img id="myImg28" src="images/bridal5.jpg" style="width:100%">
+    <img id="myImg29" src="images/engagement.jpg" style="width:100%">
+    <img id="myImg30" src="images/heavy9.jpg" style="width:100%">
+  </div>
+</div>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column2");
+
+// Declare a loop variable
+var i;
+
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "20%";  // IE10
+    elements[i].style.flex = "20%";
+  }
+}
+
+</script>
+</body>
+<head>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<!--To make galley pics bigger-->
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg2");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg3");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg4");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg5");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg6");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg7");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg8");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg9");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg10");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg11");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg12");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg13");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg14");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg15");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg16");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg16");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg17");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg18");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg19");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg20");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg21");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg22");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg23");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg24");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg25");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg26");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg27");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg28");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg29");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg30");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+
+
+
+
+
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</head>
+</div>
+<div id="FAQ" class="tabcontent">
+<body>
+
+<h2>Frequently Asked Questions</h2>
+
+<button class="accordion">What is henna?</button>
+<div class="panel">
+  <p>Henna is a natural paste made which is applied to the skin and left to dry. Once it is removed,it darkens to a medium to deep brown and fades in 5-12 days.  </p>
+</div>
+
+<button class="accordion">Is it natural?</button>
+<div class="panel">
+  <p>Henna is made from natural Rajasthani Henna Powder, Sugar, Essential Oil (Eucalyptus, Lavendar, Cajeput etc.) and Water.</p>
+</div>
+
+<button class="accordion">How do I get the darkest stain? </button>
+<div class="panel">
+  <p>Aftercare Instructions: </p>
+   <h4>Before:</h4>
+    <p>Exfoliate skin to remove dead skin cells </p> 
+    <p>Wash hands and avoid using hand creams or oils</p>
+    <h4>During</h4>
+    <h4>After</h4>
+    <p></p>
+    <p></p>
+</div>
+
+<button class="accordion">How long do henna cones last? </button>
+<div class="panel">
+  <p>3-5 days in the fridge, and 6-8 months in the freezer. Do not leave your henna cones out!</p>
+</div>
+    
+<button class="accordion">Do you have black henna? </button>
+<div class="panel">
+  <p>NO</p>
+</div>
+    
+<button class="accordion">Do you have instant henna?</button>
+<div class="panel">
+  <p>NO</p>
+</div>
+
+<button class="accordion">Do you ship to the US or outside of Canada? </button>
+<div class="panel">
+  <p>No sorry, at this time I do not</p>
+</div>
+  
+<button class="accordion"> I have sensitive skin, can I still use henna? </button>
+<div class="panel">
+  <p>Use lavender</p>
+</div>
+<script>
+    
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+    <h3>Still have a question? Send me a message! </h3>
+
+</div>
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+    <h4>Text</h4>
+  <p>(416) 629-2610</p>
+  <p> Please do not call or leave a voicemail, thank you.</p>
+  <h4>Email</h4>
+  <p>ushnamehndi@gmail.com</p>
+    <h4>Instagram</h4>
+  <p>@ushnamehndi</p>
+        <h4>Location</h4>
+  <p>Markham on McCowan and 16th</p>
+</div>
+    
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
